@@ -2,9 +2,38 @@
 title: MMS 
 layout: persian
 ---
+
 # آموزش مبانی چندرسانه‌ای 
 
 این درسنامه بر مبنای فصول مشخص شده از کتاب Ze-Nian Li, Mark S. Drew, Jiangchuan Liu با تأکید بر توضیحات عمیق، فرمول‌ها و مثال‌های مرتبط از متن کتاب ارائه می‌شود.
+
+* [آموزش مبانی چندرسانه‌ای](#آموزش-مبانی-چندرسانه‌ای)
+    * [فصل 1: آشنایی با چندرسانه‌ای (Introduction to Multimedia) - صفحه 13 به بعد](#فصل-1-آشنایی-با-چندرسانه‌ای-introduction-to-multimedia---صفحه-13-به-بعد)
+        * [1.1 چندرسانه‌ای چیست؟ (What is Multimedia?)](#11-چندرسانه‌ای-چیست-what-is-multimedia)
+        * [1.2 تاریخچه مختصر و توسعه چندرسانه‌ای (A Brief History and Development of Multimedia)](#12-تاریخچه-مختصر-و-توسعه-چندرسانه‌ای-a-brief-history-and-development-of-multimedia)
+        * [1.3 کاربردهای چندرسانه‌ای (Applications of Multimedia)](#13-کاربردهای-چندرسانه‌ای-applications-of-multimedia)
+        * [1.4 جنبه‌های فنی چندرسانه‌ای (Technical Aspects of Multimedia)](#14-جنبه‌های-فنی-چندرسانه‌ای-technical-aspects-of-multimedia)
+    * [فصل 2: درک اصول بصری و سیستم‌های تصویر (Understanding Visual and Image Systems) - به طور خلاصه و با تمرکز بر چشم، نور و رنگ - صفحه 81 به بعد](#فصل-2-درک-اصول-بصری-و-سیستم‌های-تصویر-understanding-visual-and-image-systems---به-طور-خلاصه-و-با-تمرکز-بر-چشم-نور-و-رنگ---صفحه-81-به-بعد)
+        * [2.1 ساختار چشم انسان و سیستم بینایی (The Human Visual System - HVS)](#21-ساختار-چشم-انسان-و-سیستم-بینایی-the-human-visual-system---hvs)
+        * [2.2 نور و رنگ (Light and Color)](#22-نور-و-رنگ-light-and-color)
+    * [فصل 6: صوتیات (Audio) - صفحه 149 به بعد](#فصل-6-صوتیات-audio---صفحه-149-به-بعد)
+        * [6.1 دیجیتالی کردن صدا (Digitization of Sound) - صفحه 159](#61-دیجیتالی-کردن-صدا-digitization-of-sound---صفحه-159)
+        * [6.2 سنتز صدا (Audio Synthesis) - صفحه 150](#62-سنتز-صدا-audio-synthesis---صفحه-150)
+        * [6.3 فرمت‌های فایل صوتی (Audio File Formats) - صفحه 165](#63-فرمت‌های-فایل-صوتی-audio-file-formats---صفحه-165)
+    * [فصل 7: فشرده‌سازی داده‌های چندرسانه‌ای (Multimedia Data Compression) - صفحه 271 به بعد](#فصل-7-فشرده‌سازی-داده‌های-چندرسانه‌ای-multimedia-data-compression---صفحه-271-به-بعد)
+        * [7.1 مقدمه (Introduction) - صفحه 271](#71-مقدمه-introduction---صفحه-271)
+        * [7.2 انواع فشرده‌سازی (Types of Compression)](#72-انواع-فشرده‌سازی-types-of-compression)
+        * [7.3 افزونگی داده‌ها (Data Redundancy) - صفحه 272](#73-افزونگی-داده‌ها-data-redundancy---صفحه-272)
+        * [7.4 مدل‌های فشرده‌سازی عمومی (General Compression Models) - صفحه 273](#74-مدل‌های-فشرده‌سازی-عمومی-general-compression-models---صفحه-273)
+        * [7.5 الگوریتم‌های فشرده‌سازی بدون فقدان (Lossless Compression Algorithms)](#75-الگوریتم‌های-فشرده‌سازی-بدون-فقدان-lossless-compression-algorithms)
+    * [فصل 8: فشرده‌سازی تصویر (Image Compression) - صفحه 285 تا انتهای 8.5](#فصل-8-فشرده‌سازی-تصویر-image-compression---صفحه-285-تا-انتهای-85)
+        * [8.1 مقدمه (Introduction) - صفحه 285](#81-مقدمه-introduction---صفحه-285)
+        * [8.2 استانداردهای فشرده‌سازی تصویر (Image Compression Standards) - صفحه 286](#82-استانداردهای-فشرده‌سازی-تصویر-image-compression-standards---صفحه-286)
+        * [8.3 چارچوب فشرده‌سازی تصویر (Image Compression Framework) - صفحه 287](#83-چارچوب-فشرده‌سازی-تصویر-image-compression-framework---صفحه-287)
+        * [8.4 فشرده‌سازی JPEG (JPEG Compression) - صفحه 287](#84-فشرده‌سازی-jpeg-jpeg-compression---صفحه-287)
+        * [8.5 مفاهیم تبدیل کسینوسی گسسته (DCT Concepts) - صفحه 291](#85-مفاهیم-تبدیل-کسینوسی-گسسته-dct-concepts---صفحه-291)
+    * [فصل 9: فشرده‌سازی ویدئو (Video Compression) - فقط 9.1 - صفحه 303](#فصل-9-فشرده‌سازی-ویدئو-video-compression---فقط-91---صفحه-303)
+        * [9.1 مقدمه به فشرده‌سازی ویدئو (Introduction to Video Compression)](#91-مقدمه-به-فشرده‌سازی-ویدئو-introduction-to-video-compression)
 
 ---
 
