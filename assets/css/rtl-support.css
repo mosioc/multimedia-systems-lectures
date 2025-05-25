@@ -1,0 +1,51 @@
+/* RTL Support for Persian Content */
+[dir="rtl"] {
+  font-family: 'Tahoma', 'Arial', sans-serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  text-align: right;
+}
+
+[dir="rtl"] ul,
+[dir="rtl"] ol {
+  padding-right: 2em;
+  padding-left: 0;
+}
+
+[dir="rtl"] blockquote {
+  border-right: 3px solid #ddd;
+  border-left: none;
+  padding-right: 1em;
+  padding-left: 0;
+}
+
+[dir="rtl"] table {
+  text-align: right;
+}
+
+/* Fix for math equations and code blocks in RTL context */
+[dir="rtl"] .katex {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* Ensure code blocks display correctly */
+[dir="rtl"] pre,
+[dir="rtl"] code,
+[dir="rtl"] .highlighter-rouge div.highlight {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: embed;
+}
+
+/* Fix code block container alignment */
+[dir="rtl"] div.highlighter-rouge {
+  direction: rtl;
+  text-align: left;
+}

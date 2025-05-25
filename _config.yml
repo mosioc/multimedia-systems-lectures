@@ -1,0 +1,19 @@
+title: QM-FA
+description: QM Persian
+theme: just-the-docs
+
+url: https://just-the-docs.github.io
+
+# customize 
+color_scheme: dark
+
+footer_content: "_includes/footer_custom.html"
+
+math: katex
+
+# Aux links for the upper right navigation
+aux_links:
+  "mosioc":
+    - "https://github.com/mosioc"
+
+    
