@@ -1,5 +1,5 @@
 ---
-title: MMS
+title: MMS 
 layout: persian
 ---
 # آموزش مبانی چندرسانه‌ای 
