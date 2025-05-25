@@ -11,9 +11,29 @@ footer_content: "_includes/footer_custom.html"
 
 math: katex
 
+# Enable table of contents
+toc:
+  enabled: true
+  h_min: 1
+  h_max: 3
+
+# Collections for better organization
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+
+just_the_docs:
+  collections:
+    docs:
+      name: Documentation
+
+# Enable search
+search_enabled: true
+
 # Aux links for the upper right navigation
 aux_links:
   "mosioc":
     - "https://github.com/mosioc"
 
-    
+

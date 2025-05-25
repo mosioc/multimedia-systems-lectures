@@ -14,6 +14,50 @@ math: katex
     font-family: 'Vazir', 'Tahoma', 'Arial', sans-serif;
   }
 
+  /* Preserve Just the Docs nav styling while adding RTL support */
+  .nav-list .nav-list-item .nav-list-link {
+    text-align: right;
+  }
+
+  .nav-list .nav-list-item .nav-list-expander {
+    left: 0;
+    right: auto;
+  }
+
+  .nav-list .nav-list-item {
+    padding: 0;
+  }
+
+  /* Custom RTL list styling that doesn't interfere with Just the Docs nav */
+  [dir="rtl"] .main-content ul:not(.nav-list),
+  [dir="rtl"] .main-content ol:not(.nav-list) {
+    padding-right: 2em;
+    padding-left: 0;
+  }
+
+  /* Keep table of contents styling */
+  .toc {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .toc ul {
+    padding-right: 1.5em;
+    padding-left: 0;
+  }
+
+  /* Adjust navigation elements for RTL */
+  .side-bar {
+    direction: rtl;
+  }
+  
+  .site-nav,
+  .site-header,
+  .site-footer {
+    direction: rtl;
+    text-align: right;
+  }
+
   [dir="rtl"] ul,
   [dir="rtl"] ol {
     list-style: none;
