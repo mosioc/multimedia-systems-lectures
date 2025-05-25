@@ -5,5 +5,26 @@
     {% include katex.html %}
 {% endcase %}
 
-<!-- RTL Support Stylesheet -->
+<!-- RTL Support -->
 <link rel="stylesheet" href="{{ '/assets/css/rtl-support.css' | relative_url }}">
+<script src="{{ '/assets/js/rtl-support.js' | relative_url }}" defer></script>
+
+<!-- Fix anchor links for RTL content -->
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    if (document.dir === 'rtl') {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    }
+});
+</script>

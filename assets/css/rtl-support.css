@@ -10,6 +10,12 @@
 [dir="rtl"] h5,
 [dir="rtl"] h6 {
   text-align: right;
+  unicode-bidi: isolate;
+}
+
+/* Fix heading anchors for RTL */
+[dir="rtl"] .anchor-heading {
+  unicode-bidi: isolate;
 }
 
 [dir="rtl"] ul,
@@ -27,6 +33,26 @@
 
 [dir="rtl"] table {
   text-align: right;
+}
+
+/* Fix internal links in RTL context */
+[dir="rtl"] a[href^="#"] {
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+/* Fix navigation in RTL context */
+[dir="rtl"] .nav-list .nav-list-item {
+  unicode-bidi: isolate;
+}
+
+[dir="rtl"] .site-nav {
+  unicode-bidi: isolate;
+}
+
+/* Fix table of contents in RTL context */
+[dir="rtl"] .toc {
+  unicode-bidi: isolate;
 }
 
 /* Fix for math equations and code blocks in RTL context */
@@ -48,4 +74,14 @@
 [dir="rtl"] div.highlighter-rouge {
   direction: rtl;
   text-align: left;
+}
+
+/* Fix search results in RTL context */
+[dir="rtl"] .search-result-doc {
+  unicode-bidi: isolate;
+}
+
+/* Fix main content in RTL context */
+[dir="rtl"] .main-content {
+  unicode-bidi: isolate;
 }

@@ -23,13 +23,23 @@ collections:
     permalink: "/:collection/:path/"
     output: true
 
+# Just the Docs specific settings
 just_the_docs:
-  collections:
-    docs:
-      name: Documentation
+  # Enable support for Arabic/Persian characters in anchors
+  heading_anchors: true
+  heading_anchor_render: true
+  # Sanitization settings to preserve RTL characters
+  html_to_anchor: true
+  sanitize_html_attributes: false
 
-# Enable search
-search_enabled: true
+# Enable search with RTL support
+search:
+  enabled: true
+  heading_level: 3
+  rel_url: false
+  button: true
+  tokenizer_separator: /[\s/]+/
+  heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
